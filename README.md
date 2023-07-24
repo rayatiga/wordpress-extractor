@@ -35,5 +35,5 @@ Make sure file `latest.tar.gz` is inside the WordPress root directory (check wit
 Execute with `sudo` or `root` privileges
 
 ```bash
-$ sudo ./makewpdir.sh
+sudo ./makewpdir.sh
 ```

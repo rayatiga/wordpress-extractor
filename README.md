@@ -5,7 +5,7 @@ Extracting from WordPress downloaded file (latest.tar.gz) to custom name directo
 ## installation
 
 ```bash
-$ git clone https://github.com/rayatiga/wordpress-extractor.git
+git clone https://github.com/rayatiga/wordpress-extractor.git
 ```
 
 ## preparing
@@ -13,13 +13,13 @@ $ git clone https://github.com/rayatiga/wordpress-extractor.git
 Go to inside `wordpress-extractor` directory
 
 ```bash
-$ cd wordpress-installer/
+cd wordpress-installer/
 ```
 
-Make `wp-install.sh` executable
+Make `makewpdir.sh` executable
 
 ```bash
-$ chmod +x wp-install.sh
+chmod +x makewpdir.sh
 ```
 
 ## using
@@ -27,7 +27,7 @@ $ chmod +x wp-install.sh
 Move to WordPress root directory (e.g., `/var/www/html/`)
 
 ```bash
-$ cd /var/www/html/
+sudo mv makewpdir.sh /var/www/html/
 ```
 
 Make sure file `latest.tar.gz` is inside the WordPress root directory (check with `ls` command)
@@ -36,10 +36,4 @@ Execute with `sudo` or `root` privileges
 
 ```bash
 $ sudo ./makewpdir.sh
-```
-
-or
-
-```bash
-$ sudo sh makewpdir.sh
 ```
